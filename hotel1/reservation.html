@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+    
+   @media(min-width: 360px) {
+        * {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+  }
+  body {
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  
+  .booking {
+    margin: 3px 0;
+   
+  }
+  
+  .booking1 {
+    width: 49%;
+    display: inline-block;
+    float:left;
+    margin-left: 1%;
+    
+  }
+  
+  label {
+    display: block;
+    font-family: 'Arial';
+    padding-bottom: 10px;
+  
+  }
+  
+  .layout {
+    border-radius: 2px;
+    border: 2px solid #777;
+    box-sizing: border-box;
+    font-size: 1.25em;
+    font-family: 'Arial';
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .booking.inline input {
+    width: 90%;
+    display: inline-block;
+    
+  }
+
+ 
+  .click {
+    height:5vh;
+    width: 15vw;
+    background: dodgerblue;
+    border: none;
+    color: white;
+
+    font-family: 'Arial';
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    border: 1px solid;
+  }
+  .layout{
+    border: 1px solid dodgerblue;
+  }
+}
+@media(min-width: 980px) {
+  body {
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  
+  .booking {
+    margin: 3px 0;
+   
+  }
+  
+  .booking1 {
+    width: 49%;
+    display: inline-block;
+    float:left;
+    margin-left: 1%;
+    
+  }
+  
+  label {
+    display: block;
+    font-family: 'Arial';
+    padding-bottom: 10px;
+  
+  }
+  
+  .layout {
+    border-radius: 2px;
+    border: 2px solid #777;
+    box-sizing: border-box;
+    font-size: 1.25em;
+    font-family: 'Arial';
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .booking.inline input {
+    width: 90%;
+    display: inline-block;
+    
+  }
+
+ 
+  .click {
+    height:5vh;
+    width: 15vw;
+    background: dodgerblue;
+    border: none;
+    color: white;
+
+    font-family: 'Arial';
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    border: 1px solid;
+  }
+  .layout{
+    border: 1px solid dodgerblue;
+  }
+}
+  
+</style>
+
+<form method="post">
+    <div class="booking">
+      <label for="name">Name</label>
+      <input required class="layout" type="text" placeholder="Juan Dela Cruz">
+    </div>
+    <div class="booking">
+      <label for="email">E-mail</label>
+      <input required class="layout" type="email" placeholder="juan.delacruz@gmail.com">
+    </div>
+    <div class="booking">
+      <label>Contact Number</label>
+      <input class="layout">
+    </div>
+    
+    <div class="booking1">
+      <label>Check-in Date</label>
+      <input required class="layout" type="date">
+    </div>
+    <div class="booking1">
+      <label>Check-out Date</label>
+      <input required class="layout" type="date">
+    </div>
+    <div class="booking">
+      <label >Select Room</label>
+      <select required>
+          <option  class="layout" value="">Choose a Room</option>
+          <option>Fourth Single</option>
+          <option>Double Room|Twin</option>
+          <option>Double Room|Extra</option>
+      </select>
+    </div>
+    <div class="booking">
+      <label >Select Mode of Payment</label>
+      <select  required>
+          <option class="layout" value="">Choose</option>
+          <option>Paymaya</option>
+          <option>Gcash </option>
+          <option>On counter</option>
+      </select>
+    </div>
+    <br>
+    <button class="click" type="submit">Submit</button>
+  </form>
+  </html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <style>
+       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+  * {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+  }
+    .top-nav{
+     height:7vh;
+     position: absolute;
+     top:0;
+     right:0;
+     left:0;
+     width: 100%;
+     color: #fff;
+    }
+    #logo{
+      height:100px;
+      width:110px;
+      position:absolute;
+      left:0;
+      padding:7px;
+       top:0;
+     }
+    .img {
+      width: 100%;
+    }
+    @media(min-width: 360px) {
+      .top-nav > ul{
+      display:flex;
+      flex-direction:row;
+      align-items: center;
+      justify-content: space-around;
+      width: 50%;
+      float: right;
+      height: 100%;
+      list-style: none;
+      
+      font-size:15px;
+    }
+       .img-container{
+      display:flex;
+      flex-direction:row; 
+      justify-content:space-between;
+    }
+    .description{
+   
+   width: 50%;
+   color: black;
+   line-height: 5vh;
+   
+ }
+ #cover {
+      width: 100%;
+      z-index: 1;
+    }
+ .websites{
+     display:flex;
+     flex-direction:row;
+     align-items:center;
+     font-size:20px;
+     justify-content:center;
+     }
+     .websites a{
+     display:flex;
+     flex-direction:column;
+     align-items:center;
+     justify-content:center;
+     border:1px solid white;
+     width:50px;
+     height:50px;
+     border-radius:100px;
+     margin:10px;
+     background:#000;
+     }
+     .websites a:hover{
+     -webkit-tap-highlight-color: transparent;
+     }
+     .websites a img{
+     width:25px;
+     height:25px;
+     filter:invert(100%);
+    
+     }
+ .footer2> p{
+       color:#000;
+       font-family:Arial;
+       font-size:15px;
+       display: flex;
+      flex-direction: row;
+     justify-content:  space-around;
+     text-decoration: none;
+     
+ }
+ .container {
+  position: relative;
+  width:40%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.img-container{
+      display:flex;
+      flex-direction:row; 
+      justify-content:space-between;
+      position: relative;
+      left: 2px;
+      padding-left:7px;
+    }
+  .container {
+  position: relative;
+  width:40%;
+}
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.reserve{
+    height: 5vh;
+    width: 15vw;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+.reserve>a{
+  color: white;
+    text-decoration: none;
+}
+}
+     @media(min-width: 980px) {
+    .top-nav>ul{
+      display:flex;
+      flex-direction:row;
+      align-items: center;
+      justify-content: space-around;
+      width: 60%;
+      float: right;
+      height: 100%;
+      list-style: none;
+      font-size: 1em;
+      font-size: 15px;
+    }
+    .description{
+   
+    width: 40%;
+    color: black;
+    line-height: 5vh;
+    position: relative;
+    right: 0%;
+    
+  }
+  #cover {
+      width: 100%;
+      z-index: 1;
+    }
+    #logo{
+      height:55px;
+      width:180px;
+      position:absolute;
+      left:0;
+      padding:3px;
+       top:0;
+       z-index: 1;
+     }
+  .websites{
+      display:flex;
+      flex-direction:row;
+      align-items:center;
+      font-size:20px;
+      justify-content:center;
+      }
+      .websites a{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      border:1px solid white;
+      width:50px;
+      height:50px;
+      border-radius:100px;
+      margin:10px;
+      background:#000;
+      }
+      .websites a:hover{
+      -webkit-tap-highlight-color: transparent;
+      }
+      .websites a img{
+      width:25px;
+      height:25px;
+      filter:invert(100%);
+     
+      }
+  .footer2> p{
+        color:#000;
+        font-family:Arial;
+        font-size:15px;
+        display: flex;
+       flex-direction: row;
+      justify-content:  space-around;
+      text-decoration: none;
+      
+  }
+  .img-container{
+      display:flex;
+      flex-direction:row; 
+      justify-content:space-between;
+      position: relative;
+      left: 2px;
+      padding-left:7px;
+    }
+  .container {
+  position: relative;
+  width:40%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.reserve{
+    height: 5vh;
+    width: 15vw;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+.reserve>a{
+  color: white;
+    text-decoration: none;
+}
+  }
+
+  </style>
+
+</head>
+
+<body>
+  <div class="top-nav">
+    <ul>
+      <img src="moynsa.png" id="logo">
+      <li><b>Home</b></li>
+      <li><b>Services</b></li>
+      <li><b>Contacts</b></li>
+    </ul>
+    
+  </div>
+
+  
+  
+  <img src="cover.jpg" id="cover">
+<div class="img-container">
+   <div class="container"> 
+    <img src="https://www.hoteldah.com/wp-content/uploads/2021/09/700_2946-Edit-Edit-1024x684.jpg" alt="Avatar" class="image" style="width:100%">
+    <div class="middle">
+      <button class="text">Fourth Single</button>
+    </div>
+  </div>
+
+
+<div class="description" style="margin-right:30px; margin-top: 5px;">
+    <h1> Description</h1>
+<ul>
+<li style= "font-size:25px;" >1 single bed</li>
+<li style= "font-size:25px;"> Occupancy: 1</li>
+ <li style= "font-size:25px;">Wi-Fi</li>
+ <li style= "font-size:25px;">Kettle for tea and coffee</li>
+ <li style= "font-size:25px;">Air Conditioning</li>
+<li style= "font-size:25px;" >Satellite TV</li>
+<li style= "font-size:25px;">Room Service </li>
+<li style= "font-size:25px;">Laundry/Cleaning Service a dry</li>
+</ul>
+<button class="reserve"><a href="reservation.html">Reserve</a></button>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<div class="footer2">
+  
+        <div class="websites">
+          <a href=""><img src="https://image.flaticon.com/icons/png/512/733/733605.png" alt="facebook"></a>
+          <a href=""><img src="https://image.flaticon.com/icons/png/512/733/733635.png" alt="twitter"></a>
+          <a href=""><img src="https://image.flaticon.com/icons/png/512/1384/1384031.png" alt="instagram"></a>
+          <a href=""><img src="https://image.flaticon.com/icons/svg/220/220343.svg" alt="linkedin"></a>
+        </div>
+<p>©2021</p>
+
+</div>
+     
+  <script>
+   
+  </script>
+</body>
+</html>
